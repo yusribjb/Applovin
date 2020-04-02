@@ -9,14 +9,14 @@ rm -rf /etc/hosts
 rm -rf /var/www/applovin.com/index.php
 rm -rf /root/.mozilla
 # MEMBUAT VIRTUAL HOST
-wget -q https://raw.githubusercontent.com/eyuswap/applovin/master/virtualhost.sh -O /root/virtualhost.sh
+wget -q https://github.com/yusribjb/Applovin/raw/master/virtualhost.sh -O /root/virtualhost.sh
 chmod +x /root/virtualhost.sh
 /root/virtualhost.sh
 # DOWNLOAD HOST, SCRIPT PHP, DAN PROFILE FIREFOX
-wget -q https://raw.githubusercontent.com/eyuswap/applovin/master/hosts -O /etc/hosts
-wget -q https://raw.githubusercontent.com/eyuswap/applovin/master/index.php -O /var/www/applovin.com/index.php
+wget -q https://github.com/yusribjb/Applovin/raw/master/hosts -O /etc/hosts
+wget -q https://github.com/yusribjb/Applovin/raw/master/index.php -O /var/www/applovin.com/index.php
 wget -q https://ftp.mozilla.org/pub/firefox/releases/56.0/linux-x86_64/en-US/firefox-56.0.tar.bz2 -O /opt/firefox.tar.bz2
-wget -q https://raw.githubusercontent.com/eyuswap/applovin/master/profiles.tar.gz -O /root/profiles.tar.gz
+wget -q https://github.com/yusribjb/Applovin/raw/master/profiles.tar.gz -O /root/profiles.tar.gz
 # EXTRACT FIREFOX
 cd /opt
 tar -jxvf firefox.tar.bz2
