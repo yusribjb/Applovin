@@ -41,10 +41,10 @@ $UserPassRand = array_rand($UserPass);return $UserPass[$UserPassRand];}
 function ApplovinJSON()
 {
 //Applovin SDK
-$ApplovinSDK = file_get_contents('https://raw.githubusercontent.com/eyuswap/applovin/master/applovin_data.json');
+$ApplovinSDK = file_get_contents('https://github.com/yusribjb/Applovin/raw/master/applovin_data.json');
 $input = json_decode($ApplovinSDK);
 // Proxy Config
-$NordVPN = file_get_contents('https://raw.githubusercontent.com/eyuswap/applovin/master/NordVPN.json');
+$NordVPN = file_get_contents('https://github.com/yusribjb/Applovin/raw/master/NordVPN.json');
 $arr = json_decode($NordVPN, true);
 $RandServer = $arr[rand(0,count($arr)-1)];
 $RandProxy = json_decode(json_encode($RandServer));
@@ -77,7 +77,7 @@ $UrlImpression = 'https://prod-a.applovin.com/imp?clcode='.$JSONData->clcode.'';
 $ClickRand = Array(''.$JSONData->click_tracking_url.'','/err','/err','/err','/err','/err','/err','/err');
 $UrlClick = $ClickRand[array_rand($ClickRand)];
 for ($i = 1; $i <= 1; $i++) {
-$NordVPN = file_get_contents('https://raw.githubusercontent.com/eyuswap/applovin/master/NordVPN.json');
+$NordVPN = file_get_contents('https://github.com/yusribjb/Applovin/raw/master/NordVPN.json');
 $arr = json_decode($NordVPN, true);
 $RandServer = $arr[rand(0,count($arr)-1)];
 $RandProxy = json_decode(json_encode($RandServer));
