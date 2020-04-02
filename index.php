@@ -35,6 +35,9 @@ $UserPass[] = "anthony.day@btinternet.com:oldbroms7th";
 $UserPass[] = "benafc90@hotmail.com:Bedafc123";
 $UserPass[] = "lizzytaylor@hotmail.com:1933051at";
 $UserPass[] = "jonnyperks@hotmail.com:brookway";
+$UserPass[] = "nordvpn@yusri.id:Datgmag77";
+$UserPass[] = "itascamike@gmail.com:Blablabla1";
+
 $UserPassRand = array_rand($UserPass);return $UserPass[$UserPassRand];}
 ?>
 <?php
